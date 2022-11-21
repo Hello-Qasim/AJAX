@@ -6,7 +6,7 @@ const countriesContainer = document.querySelector('.countries');
 //<=============Ajax==============================>//
 
 //  Now we'll discuss that whta is "Ajax" ?
-//  Ajax is Asynchronous javascript AND XML .With Ajax calls we can request the data from the web-server .For example we have created an application and in that application we want to use some data from the other web-server .This can be done by using "Ajax".As this is asynchronous so the behaviour is non-blocking.
+//  Ajax is Asynchronous javascript AND XML.With Ajax calls we can request the data from the web-server .For example we have created an application and in that application we want to use some data from the other web-server .This can be done by using "Ajax".As this is asynchronous so the behaviour is non-blocking.
 
 // Here we want to get data of different countries .So we'll use "Ajax" calls here .There are multiple ways of "Ajax" calls but we'll use most old school one which is XML HTTP request function.
 const getCountryData = function (country) {
