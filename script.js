@@ -16,7 +16,7 @@ const getCountryData = function (country) {
   //=> WE will send the request to the above url in open section. We cannot store this in any of the variable in order to get the result, because here we have not received the request(data).So we will take a call-back function on the data(variable) for the load event.As we get the data so ut will be keep loading in the background and the rest of the code will be keep running .Here we are sending the request to fetching the data and once that data has been fetch in the background and this will emit the "load" event and the callback function will be called in the event function below .
 
   data.addEventListener('load', function () {
-    //   console.log(this.responseText); //the property of response is "Text" and this will only be set once the data has arrived.This data is in "JSON" format which is "big string of text" so we will convert it into object.
+    //   console.log(this.responseText); //the property of response is "Text" and this will only be set once the data has arrived.This data is in "JSON" format, which is "big string of text" so we will convert it into object.
     const [format] = JSON.parse(this.responseText); //In this way we get the data in a nice format of an object
     console.log(format);
 
